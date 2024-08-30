@@ -31,37 +31,63 @@
 
 <body>
 
-  <h1>A Bud Web Component</h1>
-
+  <h1>A Bud Walking Web Component</h1>
   <p>A work in progress. View, resize and change the color of Bud, the mascot, contained with SVG and web technology in a "web component" that can be shared -- more work to come!</p>
 
-  <pre><code class="language-html">&ltrose-bud id="rose-bud" width="400"&gt&lt/rose-bud&gt</code></pre>
+  <div>
+    <input type="range" id="slider" name="rose-bud" min="150" max="750" oninput="document.getElementById('rose-bud').setAttribute('width', this.value)"/>
+    <label for="rose-bud">Resize Bud</label>
+  </div>
 
-  <!-- <wdsa-rose id="wdsa-rose" width="400"> </wdsa-rose> -->
   <rose-bud id="rose-bud" width="400"></rose-bud>
 
-  <div>
-    <input type="range" id="slider" name="rose-bud" min="200" max="600" onchange="document.getElementById('rose-bud').setAttribute('width', this.value)"/>
-    <label for="rose-bud">Size</label>
-  </div>
+  <!-- <wdsa-rose id="wdsa-rose" width="400"> </wdsa-rose> -->
 
+
+  <p>Choose Bud's Color:</p>
   <div>
-    <input type="color" id="body" name="body" value="#EC1F27" onchange="document.getElementById('svgBud').style.color = this.value" />
-    <label for="body">Choose Bud's color</label>
+    <input type="color" id="body" name="body" value="#EC1F27" oninput="document.getElementById('svgBud').style.color = this.value" />
+    <label for="body">DSA Red</label>
   </div>
-  
+  <div><input type="color" id="body" name="body" value="#F04C53" oninput="document.getElementById('svgBud').style.color = this.value" />
+    <label for="body">DSA Red Tint 1</label>
+ </div>
+ <div>
+  <input type="color" id="body" name="body" value="#F4797E" oninput="document.getElementById('svgBud').style.color = this.value" />
+  <label for="body">DSA Red Tint 2</label>
+ </div> 
+ <div>
+  <input type="color" id="body" name="body" value="#F7A5A9" oninput="document.getElementById('svgBud').style.color = this.value" />
+  <label for="body">DSA Red Tint 3</label>
+ </div>
+ <div>
+  <input type="color" id="body" name="body" value="#FBD2D4" oninput="document.getElementById('svgBud').style.color = this.value" />
+  <label for="body">DSA Red Tint 4</label>
+ </div>
+
+ <div>
   <button id="start-button">Experimental: Open the eyedropper to change Bud's color</button> <span id="result"></span>
+ </div>
+
+
 
   <h3>Features in progress:</h3>
   <ul>
-    <li>Match to DSA Color Palette variables</li>
-    <li>Clean up messy code</li>
+    <li><s>Provide DSA Color Palette variables</s></li>
+    <li>TODO: Clean up messy code</li>
     <li>Add other features like a dark and night mode button</li>
     <li>Add ability to Save SVG</li>
   </ul>
+
+  <p>HTML Code to use this web component, with a default width:</p>
+  <pre><code class="language-html">&ltrose-bud id="rose-bud" width="400"&gt&lt/rose-bud&gt</code></pre>
+
+  <p>JavaScript (experimental) on the way:</p>
+  <pre><code class="language-html">&ltscript src="/example.js" &gt&lt/script&gt</code></pre>
+
   
   <script src="js/app.js"></script>
-  <footer><a href="https://github.com/airbr"><p>A pet project by a DSA member</p></a></footer>
+  <footer><a href="https://github.com/airbr"><p>A project by a DSA member</p></a></footer>
 </body>
 
 </html>
