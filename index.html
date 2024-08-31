@@ -32,17 +32,17 @@
 <body>
 
   <h1>A Bud Walking Web Component</h1>
-  <p>A work in progress. View, resize and change the color of Bud, the mascot, contained with SVG and web technology in a "web component" that can be shared -- more work to come!</p>
+  <p><strong>Bud means business.</strong> A work in progress. View, resize and change the color of Bud, the mascot, contained with SVG and web technology in a "web component" that can be shared -- more work to come!</p>
 
   <div>
     <input type="range" id="slider" name="rose-bud" min="150" max="750" oninput="document.getElementById('rose-bud').setAttribute('width', this.value)"/>
     <label for="rose-bud">Resize Bud</label>
   </div>
 
-  <rose-bud id="rose-bud" width="400"></rose-bud>
+  <rose-bud id="rose-bud" class="" width="400"></rose-bud>
 
   <!-- <wdsa-rose id="wdsa-rose" width="400"> </wdsa-rose> -->
-
+  <button class="start-button" onclick="document.getElementById('rose-bud').classList.toggle('off');">Toggle movement</button>
 
   <p>Choose Bud's Color:</p>
   <div>

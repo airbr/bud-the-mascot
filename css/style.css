@@ -105,7 +105,32 @@ input {
 rose-bud {
   /* border: #EC1F27 4px dashed; */
   margin: 24px;
+  /* animation-name: grow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; */
 }
+
+rose-bud:not(.off) {
+  animation-name: dance;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes dance {
+  0% {
+    transform:scale(.95);
+  }
+  /* Adding a step in the middle */
+  50% {
+    transform:scale(1);
+  }
+  100% {
+    transform:scale(.95);
+  }
+}
+
 
 #start-button {
   background-color: #EC1F27; /* Green */
