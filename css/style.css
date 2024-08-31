@@ -110,6 +110,18 @@ body {
   background: light-dark(white, #231F20);
 }   
 
+.subhead {
+  max-width: 670px;
+}
+
+.palette {
+  margin: 10px;
+}
+
+.palette-inverted {
+  transform: scaleX(-1);
+}
+
 p,
 label {
   font:

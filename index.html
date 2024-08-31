@@ -32,7 +32,7 @@
 <body>
 
   <h1>A Bud Walking Web Component</h1>
-  <p><strong>Bud means business.</strong> A work in progress. View, resize and change the color of Bud, the mascot, contained with SVG and web technology in a "web component" that can be shared -- more work to come!</p>
+  <p class="subhead"><strong>Bud means business.</strong> A work in progress. View, resize and change the color of Bud, the mascot, contained with SVG and web technology in a "web component" that can be shared -- more work to come!</p>
 
   <div>
     <input type="range" id="slider" name="rose-bud" min="150" max="750" oninput="document.getElementById('rose-bud').setAttribute('width', this.value)"/>
@@ -43,40 +43,25 @@
 
   <!-- <wdsa-rose id="wdsa-rose" width="400"> </wdsa-rose> -->
   <button class="start-button" onclick="document.getElementById('rose-bud').classList.toggle('off');">Toggle movement</button>
- 
-  <p>Choose Bud's Color:</p>
+  
+  <img class="palette" src="img/dsa-colors.png" />
+
+  <p>Default DSA Red</p>
   <div>
     <input type="color" id="body" name="body" value="#EC1F27" oninput="document.getElementById('svgBud').style.color = this.value" />
-    <label for="body">DSA Red</label>
+    <label for="body">Color Picker: change Bud's color!</label>
   </div>
-  <div><input type="color" id="body1" name="body1" value="#F04C53" oninput="document.getElementById('svgBud').style.color = this.value" />
-    <label for="body1">DSA Red Tint 1</label>
- </div>
- <div>
-  <input type="color" id="body2" name="body2" value="#F4797E" oninput="document.getElementById('svgBud').style.color = this.value" />
-  <label for="body2">DSA Red Tint 2</label>
- </div> 
- <div>
-  <input type="color" id="bod3" name="body3" value="#F7A5A9" oninput="document.getElementById('svgBud').style.color = this.value" />
-  <label for="body3">DSA Red Tint 3</label>
- </div>
- <div>
-  <input type="color" id="body4" name="body4" value="#FBD2D4" oninput="document.getElementById('svgBud').style.color = this.value" />
-  <label for="body4">DSA Red Tint 4</label>
- </div>
 
-  <h2>Features in progress:</h2>
-  <ul>
-    <li>TODO: Clean up messy code</li>
-  </ul>
+  <img class="palette-inverted" src="img/dsa-colors.png" />
+
+  <h2>Features in progress...</h2>
 
   <p>HTML Code to use this web component, with a default width:</p>
   <pre><code class="language-html">&ltrose-bud id="rose-bud" width="400"&gt&lt/rose-bud&gt</code></pre>
 
-  <p>JavaScript (experimental) on the way:</p>
-  <pre><code class="language-html">&ltscript src="/example.js" &gt&lt/script&gt</code></pre>
+  <p>JavaScript:</p>
+  <pre><code class="language-html">&ltscript type="module" src="https://cdn.jsdelivr.net/gh/airbr/bud-the-mascot/js/app.js" &gt&lt/script&gt</code></pre>
 
-  
   <script src="js/app.js"></script>
   <footer><a href="https://github.com/airbr"><p>A project by a DSA member</p></a></footer>
 </body>
