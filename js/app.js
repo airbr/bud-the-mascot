@@ -44,7 +44,7 @@ class RoseBud extends HTMLElement {
     super();
     this.innerHTML = svgBud;
     const icon = document.getElementById('svgBud');
-    icon.style.color = '#EC1F27';
+    icon.style.color = 'light-dark(#EC1F27, white)';
   }
   get width() {
     return this.hasAttribute && this.getAttribute('width');

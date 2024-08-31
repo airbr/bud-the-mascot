@@ -83,12 +83,31 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+:root {
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: light-dark(#231F20, white);
+    background: light-dark(white, #231F20);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: light-dark(white,#231F20);
+    background: light-dark(#231F20,white);
+  }
+}
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: light-dark(#231F20, white);
+  background: light-dark(white, #231F20);
 }   
 
 p,
@@ -132,8 +151,8 @@ rose-bud:not(.off) {
 }
 
 
-#start-button {
-  background-color: #EC1F27; /* Green */
+.start-button {
+  background-color: #EC1F27;
   border: none;
   color: white;
   padding: 15px 32px;
