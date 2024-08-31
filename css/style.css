@@ -85,6 +85,18 @@ textarea {
    ========================================================================== */
 :root {
   color-scheme: light dark;
+  --dsa-black: #201D1E;
+  --dsa-dark-gray: #3B3838;
+  --dsa-gray: #605C5C;
+  --dsa-light-gray: #8C8989;
+  --dsa-light-light-gray: #C1C0BF;
+  --dsa-red: #EC1F27;
+  --dsa-red-tint1: #F04C53;
+  --dsa-red-tint2: #F4797E;
+  --dsa-red-tint3: #F7A5A9;
+  --dsa-red-tint4: #FBD2D4;
+  --white: #fff;
+  --black: #000;
 }
 
 @media (prefers-color-scheme: light) {

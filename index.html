@@ -39,26 +39,23 @@
     <label for="rose-bud">Resize Bud</label>
   </div>
 
-  <rose-bud id="rose-bud" width="400"></rose-bud>
-
-  <!-- <wdsa-rose id="wdsa-rose" width="400"> </wdsa-rose> -->
-  <button class="start-button" onclick="document.getElementById('rose-bud').classList.toggle('off');">Toggle movement</button>
-  
-  <!-- <button class="rainbow-button" onclick="document.getElementById('rose-bud').classList.toggle('rainbow');">Beast Mode Bud</button> -->
-
+  <rose-bud id="rose-bud" color="#EC1F27" width="400"></rose-bud>
 
   <img class="palette" src="img/dsa-colors.png" />
 
+  <!-- <button class="rainbow-button" onclick="document.getElementById('rose-bud').classList.toggle('rainbow');">Beast Mode Bud</button> -->
   <p>Change Bud's color! Default: DSA Red</p>
   <div>
     <label for="body">Color Picker:</label>
     <input type="color" id="body" name="body" value="#EC1F27" oninput="document.getElementById('svgBud').style.color = this.value" />
   </div>
 
+  <button class="start-button" onclick="document.getElementById('rose-bud').classList.toggle('off');">Toggle movement</button>
+
   <h2>Features in progress...</h2>
 
-  <p>HTML Code to use this web component, with a default width:</p>
-  <pre><code class="language-html">&ltrose-bud id="rose-bud" width="400"&gt&lt/rose-bud&gt</code></pre>
+  <p>HTML Code to use this web component with an adjustable width and color:</p>
+  <pre><code class="language-html">&ltrose-bud id="rose-bud" color="#EC1F27" width="400"&gt&lt/rose-bud&gt</code></pre>
 
   <p>JavaScript (experimental v0.0.1):</p>
   <pre><code class="language-html">&ltscript type="module" src="https://cdn.jsdelivr.net/gh/airbr/bud-the-mascot/js/app.js" &gt&lt/script&gt</code></pre>

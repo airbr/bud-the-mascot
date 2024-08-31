@@ -2,7 +2,7 @@ const svgBud = '<svg id="svgBud" xmlns="http://www.w3.org/2000/svg" version="1.0
 
 class RoseBud extends HTMLElement {
   static get observedAttributes() {
-    return ['width'];
+    return ['width', 'color'];
   }
   constructor() {
     super();
@@ -20,12 +20,28 @@ class RoseBud extends HTMLElement {
       this.removeAttribute('width');
     }
   }
+  get color() {
+    return this.hasAttribute && this.getAttribute('color');
+  }
+  set color(val) {
+    if (val) {
+      this.setAttribute('color', val)
+    } else {
+      this.removeAttribute('color');
+    }
+  }
+
   attributeChangedCallback(name, oldValue, newValue) {
     const icon = document.getElementById('svgBud');
     if (name === 'width') {
       if (newValue !== oldValue) {
         icon.style.width =
           newValue.includes('px') ? newValue : `${newValue}px`;
+      }
+    }
+    if (name === 'color') {
+      if (newValue !== oldValue) {
+        icon.style.color = newValue;
       }
     }
   }
