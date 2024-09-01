@@ -1,12 +1,14 @@
 {
-  "short_name": "",
-  "name": "",
+  "short_name": "Bud, walking",
+  "name": "Bud, walking",
   "icons": [{
-    "src": "icon.png",
-    "type": "image/png",
-    "sizes": "192x192"
+    "src": "img/Bud.svg",
+    "type": "image/svg",
+    "sizes": "192x192",
+    "purpose": "any"
   }],
-  "start_url": "/?utm_source=homescreen",
+  "start_url": "/",
+  "display": "standalone",
   "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+  "theme_color": "rgb(236, 31, 39)"
 }
