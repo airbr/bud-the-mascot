@@ -1,13 +1,13 @@
 {
-  "name": " ",
-  "version": "0.0.1",
-  "description": "",
+  "name": "Bud-the=Mascot",
+  "version": "0.0.2",
+  "description": "A web component of bud the mascot",
   "private": true,
   "keywords": [
-    ""
+    "dsausa"
   ],
-  "license": "",
-  "author": "",
+  "license": "creative commons tbd",
+  "author": "Morgan Murrah",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open --config webpack.config.dev.js",
